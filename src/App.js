@@ -2,7 +2,7 @@ import React from 'react';
 import DOM from 'react-dom';
 // import FlipCard from 'react-flipcard';
 import ReactCardFlip from 'react-card-flip';
-import  Container  from 'react-dom';
+import Container from 'react-dom';
 
 import { render } from 'react-dom'
 import Flipcard from '@kennethormandy/react-flipcard'
@@ -52,7 +52,7 @@ class App extends React.Component {
       flipped_10: false,
       flipped_11: false,
     }
-        this.styles = {
+    this.styles = {
       card: {
         border: '1px solid #eeeeee',
         borderRadius: '10px',
@@ -70,116 +70,42 @@ class App extends React.Component {
   render() {
     return (
       <div>
-      <div style={this.styles.card}>
-        <Flipcard flipped={this.state.flipped_1}>
-          <img src={img_front_1} 
-          style = {this.styles.image}
-          onClick={e => this.setState({ flipped_1: !this.state.flipped_1 })} />
+        <div style={this.styles.card}>
+          <Flipcard flipped={this.state.flipped_1}>
+            <img src={img_front_1}
+              style={this.styles.image}
+              onClick={e => this.setState({ flipped_1: !this.state.flipped_1 })} />
 
-          <img src={img_back_1} 
-          style = {this.styles.image}
-          onClick={e => this.setState({ flipped_1: !this.state.flipped_1 })}/>
-        </Flipcard>
-      </div>
-      <div style={this.styles.card}>
-        <Flipcard flipped={this.state.flipped_2}>
-          <img src={img_front_2} 
-          style = {this.styles.image}
-          onClick={e => this.setState({ flipped_2: !this.state.flipped_2 })} />
+            <img src={img_back_1}
+              style={this.styles.image}
+              onClick={e => this.setState({ flipped_1: !this.state.flipped_1 })} />
+          </Flipcard>
+        </div>
+        <div style={this.styles.card}>
+          <Flipcard flipped={this.state.flipped_2}>
+            <img src={img_front_2}
+              style={this.styles.image}
+              onClick={e => this.setState({ flipped_2: !this.state.flipped_2 })} />
 
-          <img src={img_back_2} 
-          style = {this.styles.image}
-          onClick={e => this.setState({ flipped_2: !this.state.flipped_2 })}/>
-        </Flipcard>
-      </div>
+            <img src={img_back_2}
+              style={this.styles.image}
+              onClick={e => this.setState({ flipped_2: !this.state.flipped_2 })} />
+          </Flipcard>
+        </div>
+        <div style={this.styles.card}>
+          <Flipcard flipped={this.state.flipped_3}>
+            <img src={img_front_3}
+              style={this.styles.image}
+              onClick={e => this.setState({ flipped_3: !this.state.flipped_3 })} />
+
+            <img src={img_back_3}
+              style={this.styles.image}
+              onClick={e => this.setState({ flipped_3: !this.state.flipped_3 })} />
+          </Flipcard>
+        </div>
       </div>
     )
   }
 }
-
-// render(<App />, document.getElementById('target'))
-
-
-// class App extends React.Component {
-//   constructor() {
-//     super();
-//       this.state = {
-//       isFlipped: false
-//     };
-//     this.handleClick = this.handleClick.bind(this);
-//     this.styles = {
-//       card: {
-//         border: '1px solid #eeeeee',
-//         borderRadius: '10px',
-//         padding: '5px',
-//         height: '550px',
-//         width: '337px'
-//       },
-//       image: {
-//         height: '550px',
-//         width: '337px'
-//       }
-//     }
-//   }
-
-//   handleClick(e) {
-//     e.preventDefault();
-//     this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
-//   }
-
-
-
-//   render() {
-//     return (
-//       <div >
-//       {/* <Container> */}
-//       <section>
-//         <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal" >
-//           <div style={this.styles.card}>
-//             <img
-//               style={this.styles.image}
-//               src={front}
-//             />
-
-//             <button onClick={this.handleClick}>Flip Card</button>
-//           </div>
-
-//           <div style={this.styles.card}>
-//             <img
-//               style={this.styles.image}
-//               src={back}
-//             />
-
-//             <button onClick={this.handleClick}>Flip Card</button>
-//           </div>
-//         </ReactCardFlip>
-//         </section>
-//         <section>
-//         <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal" >
-//           <div style={this.styles.card}>
-//             <img
-//               style={this.styles.image}
-//               src={front}
-//             />
-
-//             <button onClick={this.handleClick}>Flip Card</button>
-//           </div>
-
-//           <div style={this.styles.card}>
-//             <img
-//               style={this.styles.image}
-//               src={back}
-//             />
-
-//             <button onClick={this.handleClick}>Flip Card</button>
-//           </div>
-//         </ReactCardFlip>
-//         </section>
-//       {/* </Container> */}
-//       </div>
-//     )
-//   }
-// }
-
 
 export default App;
