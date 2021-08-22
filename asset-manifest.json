@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/tmleo_namecard/static/css/main.37b2c23f.chunk.css",
-    "main.js": "/tmleo_namecard/static/js/main.1a214ff7.chunk.js",
-    "main.js.map": "/tmleo_namecard/static/js/main.1a214ff7.chunk.js.map",
-    "runtime-main.js": "/tmleo_namecard/static/js/runtime-main.e29271a0.js",
-    "runtime-main.js.map": "/tmleo_namecard/static/js/runtime-main.e29271a0.js.map",
-    "static/css/2.b8098a32.chunk.css": "/tmleo_namecard/static/css/2.b8098a32.chunk.css",
-    "static/js/2.18f1b1b2.chunk.js": "/tmleo_namecard/static/js/2.18f1b1b2.chunk.js",
-    "static/js/2.18f1b1b2.chunk.js.map": "/tmleo_namecard/static/js/2.18f1b1b2.chunk.js.map",
-    "static/js/3.9190e863.chunk.js": "/tmleo_namecard/static/js/3.9190e863.chunk.js",
-    "static/js/3.9190e863.chunk.js.map": "/tmleo_namecard/static/js/3.9190e863.chunk.js.map",
+    "main.css": "/tmleo_namecard/static/css/main.2b49f41d.chunk.css",
+    "main.js": "/tmleo_namecard/static/js/main.f00e8365.chunk.js",
+    "main.js.map": "/tmleo_namecard/static/js/main.f00e8365.chunk.js.map",
+    "runtime-main.js": "/tmleo_namecard/static/js/runtime-main.da517bc9.js",
+    "runtime-main.js.map": "/tmleo_namecard/static/js/runtime-main.da517bc9.js.map",
+    "static/css/2.dc57b9c9.chunk.css": "/tmleo_namecard/static/css/2.dc57b9c9.chunk.css",
+    "static/js/2.d0a207e1.chunk.js": "/tmleo_namecard/static/js/2.d0a207e1.chunk.js",
+    "static/js/2.d0a207e1.chunk.js.map": "/tmleo_namecard/static/js/2.d0a207e1.chunk.js.map",
+    "static/js/3.9ab76f13.chunk.js": "/tmleo_namecard/static/js/3.9ab76f13.chunk.js",
+    "static/js/3.9ab76f13.chunk.js.map": "/tmleo_namecard/static/js/3.9ab76f13.chunk.js.map",
     "index.html": "/tmleo_namecard/index.html",
-    "static/css/2.b8098a32.chunk.css.map": "/tmleo_namecard/static/css/2.b8098a32.chunk.css.map",
-    "static/css/main.37b2c23f.chunk.css.map": "/tmleo_namecard/static/css/main.37b2c23f.chunk.css.map",
-    "static/js/2.18f1b1b2.chunk.js.LICENSE.txt": "/tmleo_namecard/static/js/2.18f1b1b2.chunk.js.LICENSE.txt",
+    "static/css/2.dc57b9c9.chunk.css.map": "/tmleo_namecard/static/css/2.dc57b9c9.chunk.css.map",
+    "static/css/main.2b49f41d.chunk.css.map": "/tmleo_namecard/static/css/main.2b49f41d.chunk.css.map",
+    "static/js/2.d0a207e1.chunk.js.LICENSE.txt": "/tmleo_namecard/static/js/2.d0a207e1.chunk.js.LICENSE.txt",
     "static/media/back-14.54e87051.png": "/tmleo_namecard/static/media/back-14.54e87051.png",
     "static/media/back-15.335a4bf2.png": "/tmleo_namecard/static/media/back-15.335a4bf2.png",
     "static/media/back-16.cf86ea6b.png": "/tmleo_namecard/static/media/back-16.cf86ea6b.png",
@@ -38,10 +38,10 @@
     "static/media/front-13.e8022d54.png": "/tmleo_namecard/static/media/front-13.e8022d54.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e29271a0.js",
-    "static/css/2.b8098a32.chunk.css",
-    "static/js/2.18f1b1b2.chunk.js",
-    "static/css/main.37b2c23f.chunk.css",
-    "static/js/main.1a214ff7.chunk.js"
+    "static/js/runtime-main.da517bc9.js",
+    "static/css/2.dc57b9c9.chunk.css",
+    "static/js/2.d0a207e1.chunk.js",
+    "static/css/main.2b49f41d.chunk.css",
+    "static/js/main.f00e8365.chunk.js"
   ]
 }
