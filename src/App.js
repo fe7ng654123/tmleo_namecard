@@ -39,9 +39,16 @@ import img_front_10 from './namecards/front-12.png'
 import img_back_10 from './namecards/back-23.png'
 import img_front_11 from './namecards/front-13.png'
 import img_back_11 from './namecards/back-24.png'
+import flip_hint from './flip_hint.png'
 
 
 // TODO: device width
+
+
+function hide_float(){
+  console.log("fewgds")
+  document.getElementById("float_layer").style.display = "none";
+}
 
 class App extends React.Component {
   constructor() {
@@ -81,178 +88,143 @@ class App extends React.Component {
       },
     }
   }
+  
+ 
 
   render() {
     return (
-  //     <div className="center2">
-  //     <Row gutter={40}  justify="center" align="bottom" padding="10px">
-  //     {/* {companyList.map(co => 
-  //   <Col 
-  //     xs={{ span: 12 }} sm={{ span: 6 }} md={{ span: 6 }}
-  //     lg={{ span: 3 }} xl={{ span: 3 }} 
-  //   ><img src={img_front_1} width="225px"  /></Col>
-  // )} */}
-  // <Col 
-  //     xs={{ span: 12 }} sm={{ span: 6 }} md={{ span: 6 }}
-  //     lg={{ span: 3 }} xl={{ span: 3 }} 
-  //   >
-  //     <div style={this.styles.card}>
-  //         <Flipcard flipped={this.state.flipped_1}>
-  //           <img src={img_front_1}
-  //             style={this.styles.image}
-  //             onClick={e => this.setState({ flipped_1: !this.state.flipped_1 })} />
-  //           <img src={img_back_1}
-  //             style={this.styles.image}
-  //             onClick={e => this.setState({ flipped_1: !this.state.flipped_1 })} />
-  //         </Flipcard>
-  //       </div>
-  //     </Col>
-  //   <Col 
-  //     xs={{ span: 12 }} sm={{ span: 6 }} md={{ span: 6 }}
-  //     lg={{ span: 3 }} xl={{ span: 3 }} 
-  //   ><img src={img_front_1} width="225px"  /></Col>
-  //   <Col 
-  //     xs={{ span: 12 }} sm={{ span: 6 }} md={{ span: 6 }}
-  //     lg={{ span: 3 }} xl={{ span: 3 }} 
-  //   ><img src={img_front_1} width="225px"  /></Col>
-  //   <Col 
-  //     xs={{ span: 12 }} sm={{ span: 6 }} md={{ span: 6 }}
-  //     lg={{ span: 3 }} xl={{ span: 3 }} 
-  //   ><img src={img_front_1} width="225px"  /></Col>
-  //   <Col 
-  //     xs={{ span: 12 }} sm={{ span: 6 }} md={{ span: 6 }}
-  //     lg={{ span: 3 }} xl={{ span: 3 }} 
-  //   ><img src={img_front_1} width="225px"  /></Col>
-  //     </Row>
-      
-  //     </div>
-
 
       <div className="center">
-        <Row gutter={40}  justify="center" align="bottom" padding="10px">
+        <div className="modal" id="float_layer" onClick={e => hide_float()}>
+          <div className="modal_content">
+            <img src={flip_hint} style={{width:"200px"}} onClick={e => hide_float()}/>
+          </div></div>
+          <Row gutter={40} justify="center" align="bottom" padding="10px">
 
-        <div style={this.styles.card}>
-          <Flipcard flipped={this.state.flipped_1}>
-            <img src={img_front_1}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_1: !this.state.flipped_1 })} />
-            <img src={img_back_1}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_1: !this.state.flipped_1 })} />
-          </Flipcard>
-        </div>
+            <div style={this.styles.card}>
+              <Flipcard flipped={this.state.flipped_1}>
+                <img src={img_front_1}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_1: !this.state.flipped_1 })} />
+                <img src={img_back_1}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_1: !this.state.flipped_1 })} />
+              </Flipcard>
+            </div>
 
-        <div style={this.styles.card}>
-          <Flipcard flipped={this.state.flipped_2}>
-            <img src={img_front_2}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_2: !this.state.flipped_2 })} />
+            <div style={this.styles.card}>
+              <Flipcard flipped={this.state.flipped_2}>
+                <img src={img_front_2}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_2: !this.state.flipped_2 })} />
 
-            <img src={img_back_2}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_2: !this.state.flipped_2 })} />
-          </Flipcard>
-        </div>
-        <div style={this.styles.card}>
-          <Flipcard flipped={this.state.flipped_3}>
-            <img src={img_front_3}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_3: !this.state.flipped_3 })} />
+                <img src={img_back_2}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_2: !this.state.flipped_2 })} />
+              </Flipcard>
+            </div>
+            <div style={this.styles.card}>
+              <Flipcard flipped={this.state.flipped_3}>
+                <img src={img_front_3}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_3: !this.state.flipped_3 })} />
 
-            <img src={img_back_3}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_3: !this.state.flipped_3 })} />
-          </Flipcard>
-        </div>
-        <div style={this.styles.card}>
-          <Flipcard flipped={this.state.flipped_4}>
-            <img src={img_front_4}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_4: !this.state.flipped_4 })} />
+                <img src={img_back_3}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_3: !this.state.flipped_3 })} />
+              </Flipcard>
+            </div>
+            <div style={this.styles.card}>
+              <Flipcard flipped={this.state.flipped_4}>
+                <img src={img_front_4}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_4: !this.state.flipped_4 })} />
 
-            <img src={img_back_4}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_4: !this.state.flipped_4 })} />
-          </Flipcard>
-        </div>
-        <div style={this.styles.card}>
-          <Flipcard flipped={this.state.flipped_5}>
-            <img src={img_front_5}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_5: !this.state.flipped_5 })} />
+                <img src={img_back_4}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_4: !this.state.flipped_4 })} />
+              </Flipcard>
+            </div>
+            <div style={this.styles.card}>
+              <Flipcard flipped={this.state.flipped_5}>
+                <img src={img_front_5}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_5: !this.state.flipped_5 })} />
 
-            <img src={img_back_5}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_5: !this.state.flipped_5 })} />
-          </Flipcard>
-        </div>
-        <div style={this.styles.card}>
-          <Flipcard flipped={this.state.flipped_6}>
-            <img src={img_front_6}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_6: !this.state.flipped_6 })} />
+                <img src={img_back_5}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_5: !this.state.flipped_5 })} />
+              </Flipcard>
+            </div>
+            <div style={this.styles.card}>
+              <Flipcard flipped={this.state.flipped_6}>
+                <img src={img_front_6}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_6: !this.state.flipped_6 })} />
 
-            <img src={img_back_6}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_6: !this.state.flipped_6 })} />
-          </Flipcard>
-        </div>
-        <div style={this.styles.card}>
-          <Flipcard flipped={this.state.flipped_7}>
-            <img src={img_front_7}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_7: !this.state.flipped_7 })} />
+                <img src={img_back_6}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_6: !this.state.flipped_6 })} />
+              </Flipcard>
+            </div>
+            <div style={this.styles.card}>
+              <Flipcard flipped={this.state.flipped_7}>
+                <img src={img_front_7}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_7: !this.state.flipped_7 })} />
 
-            <img src={img_back_7}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_7: !this.state.flipped_7 })} />
-          </Flipcard>
-        </div>
-        <div style={this.styles.card}>
-          <Flipcard flipped={this.state.flipped_8}>
-            <img src={img_front_8}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_8: !this.state.flipped_8 })} />
+                <img src={img_back_7}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_7: !this.state.flipped_7 })} />
+              </Flipcard>
+            </div>
+            <div style={this.styles.card}>
+              <Flipcard flipped={this.state.flipped_8}>
+                <img src={img_front_8}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_8: !this.state.flipped_8 })} />
 
-            <img src={img_back_8}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_8: !this.state.flipped_8 })} />
-          </Flipcard>
-        </div>
-        <div style={this.styles.card}>
-          <Flipcard flipped={this.state.flipped_9}>
-            <img src={img_front_9}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_9: !this.state.flipped_9 })} />
+                <img src={img_back_8}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_8: !this.state.flipped_8 })} />
+              </Flipcard>
+            </div>
+            <div style={this.styles.card}>
+              <Flipcard flipped={this.state.flipped_9}>
+                <img src={img_front_9}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_9: !this.state.flipped_9 })} />
 
-            <img src={img_back_9}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_9: !this.state.flipped_9 })} />
-          </Flipcard>
-        </div>
-        <div style={this.styles.card}>
-          <Flipcard flipped={this.state.flipped_10}>
-            <img src={img_front_10}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_10: !this.state.flipped_10 })} />
+                <img src={img_back_9}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_9: !this.state.flipped_9 })} />
+              </Flipcard>
+            </div>
+            <div style={this.styles.card}>
+              <Flipcard flipped={this.state.flipped_10}>
+                <img src={img_front_10}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_10: !this.state.flipped_10 })} />
 
-            <img src={img_back_10}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_10: !this.state.flipped_10 })} />
-          </Flipcard>
-        </div>
-        <div style={this.styles.card}>
-          <Flipcard flipped={this.state.flipped_11}>
-            <img src={img_front_11}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_11: !this.state.flipped_11 })} />
+                <img src={img_back_10}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_10: !this.state.flipped_10 })} />
+              </Flipcard>
+            </div>
+            <div style={this.styles.card}>
+              <Flipcard flipped={this.state.flipped_11}>
+                <img src={img_front_11}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_11: !this.state.flipped_11 })} />
 
-            <img src={img_back_11}
-              style={this.styles.image}
-              onClick={e => this.setState({ flipped_11: !this.state.flipped_11 })} />
-          </Flipcard>
-        </div>
-        </Row>
+                <img src={img_back_11}
+                  style={this.styles.image}
+                  onClick={e => this.setState({ flipped_11: !this.state.flipped_11 })} />
+              </Flipcard>
+            </div>
+          </Row>
+
+        
       </div>
     )
   }
