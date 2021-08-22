@@ -93,7 +93,7 @@ class App extends React.Component {
       <div className="center">
         <div className="modal" id="float_layer" onClick={e => hide_float()}>
           <div className="modal_content">
-            <img src={flip_hint} style={{width:"200px"}} onClick={e => hide_float()}/>
+            <img src={flip_hint} style={{width:"200px"}} />
           </div></div>
           <Row gutter={40} justify="center" align="bottom" padding="10px">
 
