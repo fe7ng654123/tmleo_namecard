@@ -1,16 +1,12 @@
 import React from 'react';
 import DOM from 'react-dom';
-// import FlipCard from 'react-flipcard';
+
 import ReactCardFlip from 'react-card-flip';
-import Container from 'react-dom';
-// import AspectRatio  from 'react-aspect-ratio';
+
 import { Row, Col } from 'react-simple-flex-grid';
 import "react-simple-flex-grid/lib/main.css";
-import companyList from "./companyList.json";
-import Companies from './Companies';
 
 
-import { render } from 'react-dom'
 import Flipcard from '@kennethormandy/react-flipcard'
 import './App.css'
 
@@ -46,7 +42,7 @@ import flip_hint from './flip_hint.png'
 
 
 function hide_float(){
-  console.log("fewgds")
+  // console.log("fewgds")
   document.getElementById("float_layer").style.display = "none";
 }
 
