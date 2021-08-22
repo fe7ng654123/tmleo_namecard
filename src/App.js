@@ -3,7 +3,11 @@ import DOM from 'react-dom';
 // import FlipCard from 'react-flipcard';
 import ReactCardFlip from 'react-card-flip';
 import Container from 'react-dom';
-import { AspectRatio } from 'react-aspect-ratio';
+// import AspectRatio  from 'react-aspect-ratio';
+import { Row, Col } from 'react-simple-flex-grid';
+import "react-simple-flex-grid/lib/main.css";
+import companyList from "./companyList.json";
+import Companies from './Companies';
 
 
 import { render } from 'react-dom'
@@ -37,6 +41,8 @@ import img_front_11 from './namecards/front-13.png'
 import img_back_11 from './namecards/back-24.png'
 
 
+// TODO: device width
+
 class App extends React.Component {
   constructor() {
     super()
@@ -67,10 +73,10 @@ class App extends React.Component {
       },
       image: {
         width: '100%',
-    // Without height undefined it won't work
-      height: undefined,
-    // figure out your image aspect ratio
-    aspectRatio: 1110 / 674,
+        // Without height undefined it won't work
+        height: undefined,
+        // figure out your image aspect ratio
+        // aspectRatio: 1110 / 674,
         resizeMode: 'cover'
       },
     }
@@ -78,8 +84,53 @@ class App extends React.Component {
 
   render() {
     return (
+  //     <div className="center2">
+  //     <Row gutter={40}  justify="center" align="bottom" padding="10px">
+  //     {/* {companyList.map(co => 
+  //   <Col 
+  //     xs={{ span: 12 }} sm={{ span: 6 }} md={{ span: 6 }}
+  //     lg={{ span: 3 }} xl={{ span: 3 }} 
+  //   ><img src={img_front_1} width="225px"  /></Col>
+  // )} */}
+  // <Col 
+  //     xs={{ span: 12 }} sm={{ span: 6 }} md={{ span: 6 }}
+  //     lg={{ span: 3 }} xl={{ span: 3 }} 
+  //   >
+  //     <div style={this.styles.card}>
+  //         <Flipcard flipped={this.state.flipped_1}>
+  //           <img src={img_front_1}
+  //             style={this.styles.image}
+  //             onClick={e => this.setState({ flipped_1: !this.state.flipped_1 })} />
+  //           <img src={img_back_1}
+  //             style={this.styles.image}
+  //             onClick={e => this.setState({ flipped_1: !this.state.flipped_1 })} />
+  //         </Flipcard>
+  //       </div>
+  //     </Col>
+  //   <Col 
+  //     xs={{ span: 12 }} sm={{ span: 6 }} md={{ span: 6 }}
+  //     lg={{ span: 3 }} xl={{ span: 3 }} 
+  //   ><img src={img_front_1} width="225px"  /></Col>
+  //   <Col 
+  //     xs={{ span: 12 }} sm={{ span: 6 }} md={{ span: 6 }}
+  //     lg={{ span: 3 }} xl={{ span: 3 }} 
+  //   ><img src={img_front_1} width="225px"  /></Col>
+  //   <Col 
+  //     xs={{ span: 12 }} sm={{ span: 6 }} md={{ span: 6 }}
+  //     lg={{ span: 3 }} xl={{ span: 3 }} 
+  //   ><img src={img_front_1} width="225px"  /></Col>
+  //   <Col 
+  //     xs={{ span: 12 }} sm={{ span: 6 }} md={{ span: 6 }}
+  //     lg={{ span: 3 }} xl={{ span: 3 }} 
+  //   ><img src={img_front_1} width="225px"  /></Col>
+  //     </Row>
+      
+  //     </div>
+
+
       <div className="center">
-  
+        <Row gutter={40}  justify="center" align="bottom" padding="10px">
+
         <div style={this.styles.card}>
           <Flipcard flipped={this.state.flipped_1}>
             <img src={img_front_1}
@@ -90,7 +141,7 @@ class App extends React.Component {
               onClick={e => this.setState({ flipped_1: !this.state.flipped_1 })} />
           </Flipcard>
         </div>
-        
+
         <div style={this.styles.card}>
           <Flipcard flipped={this.state.flipped_2}>
             <img src={img_front_2}
@@ -201,7 +252,7 @@ class App extends React.Component {
               onClick={e => this.setState({ flipped_11: !this.state.flipped_11 })} />
           </Flipcard>
         </div>
-        
+        </Row>
       </div>
     )
   }
