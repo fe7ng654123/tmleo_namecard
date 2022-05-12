@@ -6,4 +6,3 @@ Being embeded in https://www.tmleo.org/21-22namecard
 
 Written in ReactJS
 
-`npm start` to run in localhost:3000
